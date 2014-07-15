@@ -1,15 +1,19 @@
 # Site settings
 title: Marcelo Boeira
+version: 0.0.1-alpha
 author: Marcelo Boeira
 email: me@marceloboeira.com
-description: "Marcelo Boeira's blog, weird thoughts about software development, electronic engineering."
+description: "Marcelo Boeira's blog, weird thoughts about software development, electronic engineering, music and some random geek stuff.."
 baseurl: ""
 url: "http://blog.marceloboeira.com"
+
+
 
 facebook_username: b03ir4
 twitter_username: b03ir4
 bitbucket_username:  marceloboeira
 github_username:  marceloboeira
+github_repo_url: http://github.com/marceloboeira/blog.marceloboeira.com
 bitbucket_username:  marceloboeira
 instagram_username:  marceloboeirajr
 linkedin_username: marceloboeira
