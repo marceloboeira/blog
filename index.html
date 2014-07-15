@@ -10,5 +10,8 @@ layout: default
           Posted on <a class="entry-date" href="{{ post.url | prepend: site.baseurl }}">{{ post.date | date: "%b %-d, %Y" }}</a> | By <a class="entry-author" href="http://new.marceloboeira.com">{{ site.author }}</a>
         </p>
     </header>
+    <div class="entry-description">
+	  	{{ post.description }}
+	 </div>
   </section>      
 {% endfor %}

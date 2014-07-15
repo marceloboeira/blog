@@ -18,5 +18,5 @@ gravatar_url:	"http://api.vimia.cc/gravatar/?email=marceloboeira@live.com&size=1
 
 # Build settings
 markdown: kramdown
-permalink: "/:year/:title.post"
+permalink: "/:title.post"
 paginate_path: "/page:num"
