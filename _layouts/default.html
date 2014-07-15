@@ -4,16 +4,30 @@
   {% include head.html %}
 
     <body>
-
     {% include header.html %}
 
-    <div class="page-content">
-      <div class="wrap">
-      {{ content }}
+
+    <div id="primary" class="col-sm-12">
+  <div class="content">
+    <header class="header">
+      <hgroup class="pull-left">
+        <h1 class="site-title">
+          <a rel="home" title="Marcelo Boeira" href="/">
+            <i class="fa fa-lemon-o"></i> Marcelo Boeira
+          </a>
+        </h1>
+      </hgroup>
+      <div id="togglesidebar" class="btn btn-primary pull-right">
+        <i class="fa fa-bars"></i>
       </div>
-    </div>
+    </header>
+{{ content }} 
 
+    
+  </div>
+</div>
+
+    
     {% include footer.html %}
-
     </body>
 </html>

@@ -6,7 +6,22 @@
     <meta name="description" content="{{ site.description }}">
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro%3A400%2C400italic%2C700" rel="stylesheet">
+    <link href="http://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+
+    <link rel="stylesheet" href="{{ "/static/css/library.css" | prepend: site.baseurl }}">
+    <link rel="stylesheet" href="{{ "/static/css/core.css" | prepend: site.baseurl }}">
+
+    <!-- Loading bar -->
+    <link rel="stylesheet" href=>
+    <script src="{{ "/static/js/pace.min.js" | prepend: site.baseurl }}"></script>
+    <script src="{{ "/static/js/library.js" | prepend: site.baseurl }}"></script>
+    <script src="{{ "/static/js/core.js" | prepend: site.baseurl }}"></script>
+
+    <!-- HTML5 shiv for IE8 support -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <![endif]-->
+
 
 </head>
