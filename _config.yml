@@ -5,11 +5,14 @@ email: me@marceloboeira.com
 description: "Marcelo Boeira's blog, weird thoughts about software development, electronic engineering."
 baseurl: ""
 url: ""
+
 facebook_username: b03ir4
 twitter_username: b03ir4
+bitbucket_username:  marceloboeira
 github_username:  marceloboeira
 bitbucket_username:  marceloboeira
 instagram_username:  marceloboeirajr
+linkedin_username: marceloboeira
 
 gravatar_url:	"http://api.vimia.cc/gravatar/?email=marceloboeira@live.com&size=100"
 
