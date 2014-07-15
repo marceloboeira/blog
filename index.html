@@ -1,20 +1,24 @@
 ---
 layout: default
 ---
+        {% for post in site.posts %}
+          <section class="post">
+            <header class="entry-header">
+              <img class="entry-avatar" alt="Paul Laros" height="52" width="52" src="{{ site.gravatar_url }}">
+              <h2 class="entry-title"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
+                <p class="entry-meta">
+                  Posted on <a class="entry-date" href="{{ post.url | prepend: site.baseurl }}">{{ post.date | date: "%b %-d, %Y" }}</a> | By <a class="entry-author" href="http://new.marceloboeira.com">{{ site.author }}</a> | Tags <a class="label label-danger" href="tag.html">CSS3</a>
+                </p>
+            </header>
+            <div class="entry-description">
+            </div>
+          </section>      
+        {% endfor %}
 
-<div class="home">
 
-  <h1>Posts</h1>
 
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
-        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-      </li>
-    {% endfor %}
-  </ul>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
+
 
 </div>
