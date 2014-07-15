@@ -2,6 +2,8 @@
 layout: default
 ---
 {% for post in site.posts %}
+
+  {%  if post.draft != true %}
   <section class="post">
     <header class="entry-header">
       <img class="entry-avatar" alt="Paul Laros" height="52" width="52" src="{{ site.gravatar_url }}">
@@ -14,4 +16,5 @@ layout: default
 	  	{{ post.description }}
 	 </div>
   </section>      
+  {% endif %}
 {% endfor %}

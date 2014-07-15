@@ -1,10 +1,9 @@
-blog.marceloboeira.com
-======================
 
-My Personal Blog with Jekyyl.
+###My Personal Blog with Jekyyl.
 
 TODO Alpha
 - [ ] Release Stable v0.0.1-alpha
+- [ ] Drafts
 
 TODO v1.0.0
 - [ ] Shareaholic
