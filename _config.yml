@@ -17,8 +17,6 @@ bitbucket_username:  marceloboeira
 instagram_username:  marceloboeirajr
 linkedin_username: marceloboeira
 
-gravatar_url:	"http://api.vimia.cc/gravatar/?email=marceloboeira@live.com&size=100"
-
 # Build settings
 markdown: kramdown
 permalink: "/:title.post"

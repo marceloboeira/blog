@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Hello Jekyll!"
+title:  Hello Jekyll!
 date:   2014-07-16 20:08:51
 draft: false
 categories: hello

@@ -2,7 +2,20 @@
   <p>© {{site.title}} 2014. All right reserved. See <a href="{{site.github_repo_url}}">code</a> at Github.</p>
   <p class="rss-subscribe">Subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
   {% include social.html %}
+  <p>Build <a href="{{ github.repository_url }}/commit/{{github.build_revision}}">{{github.build_revision}}</a></p>
 </footer> 
+
+<!--
+	DEBUG
+
+	{{github.public_repositories}}
+
+	--------------------
+	{{github.organization_members}}
+	--------------------
+	{{github.contributors}}
+	
+!-->
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
