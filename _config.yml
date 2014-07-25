@@ -5,8 +5,8 @@ version: 0.0.1-alpha
 author: Marcelo Boeira
 email: me@marceloboeira.com
 description: "Marcelo Boeira's blog, weird thoughts about software development, electronic engineering, music and some random geek stuff.."
-baseurl: ""
-url: "http://blog.marceloboeira.com"
+baseurl: "/blog"
+url: "http://new.marceloboeira.com"
 
 
 
