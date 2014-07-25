@@ -3,9 +3,10 @@
 
 TODO Alpha
 - [ ] Release Stable v0.0.1-alpha
-- [ ] Drafts
+- [x] ~~Drafts~~
 
 TODO v1.0.0
+- [ ] Analytics
 - [ ] Shareaholic
 - [ ] Comments
 - [ ] Ajax Loading content 
