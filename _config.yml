@@ -19,6 +19,6 @@ linkedin_username: marceloboeira
 
 # Build settings
 markdown: kramdown
-permalink: "/:title.post"
+permalink: "/:title"
 paginate_path: "/page:num"
 
