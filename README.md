@@ -2,12 +2,15 @@
 ###My Personal Blog with Jekyyl.
 
 TODO Alpha
-- [ ] Release Stable v0.0.1-alpha
+- [ ] Make a simple REAL Post
+- [ ] Remove Hello World Post
 - [x] ~~Drafts~~
+- [ ] Release Stable v0.0.1-alpha
 
-TODO v1.0.0
+TODO v0.1.0
 - [ ] Analytics
 - [ ] Shareaholic
-- [ ] Comments
+- [x] Comments (Disqus)
 - [ ] Ajax Loading content 
-- [ ] My GH repositories status
+- [x] My GH repositories status
+- [x] Code Highlight
