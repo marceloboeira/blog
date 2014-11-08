@@ -2,7 +2,7 @@
 layout: post
 title:  Hello Jekyll!
 date:   2014-07-16 20:08:51
-draft: false
+draft: true
 categories: hello
 tags: first
 description: My First post at this new blog :3
