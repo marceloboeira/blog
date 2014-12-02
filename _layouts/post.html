@@ -5,16 +5,17 @@ layout: default
 	<section class="post">
 		<header class="entry-header">
 		  <img class="entry-avatar" alt="{{ site.author }}" height="64" width="64" src="{{ site.github.owner_gravatar_url }}">
-		  <h1 class="entry-title"><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></h1>
-		  <p class="entry-meta">Posted on <a class="entry-date" href="{{ post.url | prepend: site.baseurl }}">{{ page.date | date: "%b %-d, %Y" }}</a> | By <a class="entry-author" href="/">{{ site.author }}</a>
-	      </p>
-	  	</header>
-	  	<div class="entry-description">
+		  <h1 class="entry-title">
+		  	<a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+		  </h1>
+		  <p class="entry-meta">Posted on <a class="entry-date" href="{{ post.url | prepend: site.baseurl }}">{{ page.date | date: "%b %-d, %Y" }}</a> | By <a class="entry-author" href="/">{{ site.author }}</a></p>
+	  </header>
+	  <div class="entry-description">
 	  	{{ content }}
 	  	<hr>
-	  	</div>
-	  	<div class="entry-comments">
+	  </div>
+	  <div class="entry-comments">
 	  	{% include comments.html %}
-	  	</div>
+	  </div>
 	</section>
 </div>
