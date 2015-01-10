@@ -8,17 +8,17 @@ description: "Marcelo Boeira's blog, weird thoughts about software development, 
 baseurl: ""
 url: "http://blog.marceloboeira.com"
 
+# Social Links
 facebook_username: b03ir4
 twitter_username: b03ir4
-bitbucket_username:  marceloboeira
-github_username:  marceloboeira
+bitbucket_username: marceloboeira
+github_username: marceloboeira
 github_repo_url: http://github.com/marceloboeira/blog
-bitbucket_username:  marceloboeira
-instagram_username:  marceloboeirajr
+bitbucket_username: marceloboeira
+instagram_username: marceloboeirajr
 linkedin_username: marceloboeira
 
 # Build settings
 markdown: kramdown
 permalink: "/:title"
 paginate_path: "/page:num"
-
