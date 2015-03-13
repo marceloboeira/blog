@@ -16,7 +16,7 @@ Recently I've been studying a little bit about a pretty interesting use of the d
 
 ----
 
-### What exacly is the Doppler Effect?
+### What exactly is the Doppler Effect?
 
 By definition, the doppler effect is:
 
