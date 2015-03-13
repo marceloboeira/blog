@@ -38,7 +38,10 @@ The effect is noticed not only on sound waves, but actually on every kind of wav
 
 To get a better "picture", take a look at this:
 
-{% youtube h4OnBYrbCjY 600 %}
+
+<center>
+  <iframe width="600" height="400" src="http://www.youtube.com/embed/h4OnBYrbCjY"></iframe>
+</center>
 
 ----
 
@@ -56,7 +59,7 @@ In order to measure the doppler effect for motion detection on a conventional co
 
 Take a look on a video exemplifying it:
 
-{% youtube wK_u8-UQmOs 600 %}
+<center><iframe width="600" height="400" src="http://www.youtube.com/embed/wK_u8-UQmOs"></iframe></center>
 
 
 [Here](http://danielrapp.github.io/doppler/) you can find pretty nice JavaScript approach, and cool effect on webpages by scrolling with gestures.
@@ -66,6 +69,8 @@ Take a look on a video exemplifying it:
 ### Playground
 
 I've used the [javascript](http://danielrapp.github.io/doppler/) implementation to create this little example below. The ball is controlled by movement around the computer, try shake your hands near it:
+
+> PS: Only works with Chrome
 
 <center>
   <iframe width="600" height="600" src="http://jsfiddle.net/rvsq3bbe/12/embedded/result,js" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
