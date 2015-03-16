@@ -2,12 +2,14 @@
 layout: post
 title: "Arduino meets JavaScript (Part one)"
 date:  2015-03-15 13:30:00
-draft: true
+draft: false
 categories: development IoT javascript arduino hardware node
 tags: development IoT javascript arduino hardware node
 description: Understand a bit about firmata and Johnny-Five library
 ---
 
+
+![arduino](/static/images/arduino-cover.jpg)
 
 Weeks ago I got a nice insight:
 
@@ -81,15 +83,86 @@ Yeap! With firmata, you actually CAN do that, so your board would request the AP
 
 Johnny-Five library uses the firmata to provide a very nice way to code with arduino + nodejs.
 
+#### Consider
+
+This way, your arduino will become a "zombie", it will depend on the computer to work, because all the logic depends on the computer.
+As the example says, you can also transmit the commands by network packages.
 
 ---
 
 ## Showtime
 
-After this theorical first part, lets
+After this theoretical first part, let's get more practical.
+
+I assume that you already installed, Arduino IDE and NodeJS, and that you know a little bit about those two.
+
+
+### Arduino Setup
+
+Start the Arduino IDE, Go to the “File” menu, and under “Examples” you should see a “Firmata” menu. Choose “StandardFirmata” from this menu. This will open the Arduino sketch for the StandardFirmata protocol.
+
+
+![firmata](/static/images/arduino-ide.jpg)
+
+Upload the code, and close the Arduino IDE.
+
+### Let's code
+
+Now jumping to the code, let's create a new folder, anywhere on your computer, init a node-package, and run:
+
+
+{% highlight bash %}
+$ npm install johnny-five --save
+{% endhighlight %}
+
+Let's create a small example, based on the arduno blinking led hello world, with this new process, it will be something like:
+
+{% highlight javascript %}
+
+var Arduino = require('johnny-five');
+var board = new Arduino.Board();
+
+var LEDPIN = 13;
+var OUTPUT = 1;
+
+board.on("ready", function(){
+  var val = 0;
+  this.pinMode(LEDPIN, OUTPUT);
+  this.loop( 100, function() {
+    this.digitalWrite(LEDPIN, (val = val ? 0 : 1));
+  });
+});
+
+{% endhighlight %}
+
+To run it, just:
+
+{% highlight bash %}
+node index.js
+{% endhighlight %}
+
+Now, the same example, taking vantage of the library codes:
+
+
+{% highlight javascript %}
+
+var Arduino = require('johnny-five');
+var board = new Arduino.Board();
+
+var LEDPIN = 13;
+var OUTPUT = 1;
+
+board.on("ready", function(){
+  var val = 0;
+
+});
+
+{% endhighlight %}
+
 
 ## Sources
 
 * http://arduino.cc/en/Tutorial/Memory
 * http://arduino.cc/en/Hacking/BuildProcess
 * http://openhardwareplatform.blogspot.com.br/2011/03/inside-arduino-build-process.html
+* https://blog.safaribooksonline.com/2013/07/16/javascript-powered-arduino-with-johnny-five/
